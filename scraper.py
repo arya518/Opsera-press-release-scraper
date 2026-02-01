@@ -298,7 +298,7 @@ class OpseraPressReleaseScraper:
         sheet = self.connect_to_google_sheet()
         worksheet = sheet.get_worksheet(0)
 
-        headers = ['Title', 'Date', 'Link', 'Category', 'Description', 'Scraped On', 'Is New']
+        headers = ['Title', 'Date', 'Link', 'Category', 'Description', 'Scraped On (UTC)', 'Is New']
 
         # Get existing data
         existing_data = worksheet.get_all_values()
